@@ -1,41 +1,30 @@
 [
-	{
-	  "id": 1,
-	  "title": "Spaghetti Carbonara",
-	  "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
-	  "image": "https://via.placeholder.com/150",
-	  "ingredients": [
-		"200g Spaghetti",
-		"2 Eggs",
-		"100g Pancetta",
-		"50g Parmesan Cheese",
-		"Black Pepper"
-	  ],
-	  "instructions": [
-		"Boil spaghetti according to package instructions.",
-		"Fry pancetta until crispy.",
-		"Whisk eggs and parmesan cheese together.",
-		"Combine spaghetti, pancetta, and egg mixture. Stir and serve."
-	  ]
-	},
-	{
-	  "id": 2,
-	  "title": "Chicken Tikka Masala",
-	  "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato-based gravy.",
-	  "image": "https://via.placeholder.com/150",
-	  "ingredients": [
-		"500g Chicken",
-		"2 tbsp Tikka Masala Paste",
-		"200ml Coconut Milk",
-		"1 Onion",
-		"2 Tomatoes"
-	  ],
-	  "instructions": [
-		"Marinate chicken in tikka masala paste for 30 minutes.",
-		"Grill chicken pieces.",
-		"Cook onion and tomatoes, add coconut milk, and simmer.",
-		"Add chicken and cook until done."
-	  ]
-	}
-  ]
-  
+  {
+    "id": 1,
+    "title": "Spaghetti Carbonara",
+    "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
+    "image": "https://via.placeholder.com/150",
+    "ingredients": ["200g Spaghetti", "2 large eggs", "100g bacon", "50g Parmesan cheese", "Salt and pepper"],
+    "instructions": [
+      "Cook the spaghetti according to the package instructions.",
+      "Fry the bacon until crispy, then set aside.",
+      "Beat the eggs and mix with grated Parmesan cheese.",
+      "Drain the spaghetti and quickly mix with the egg mixture.",
+      "Add the bacon and season with salt and pepper."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Chicken Tikka Masala",
+    "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato-based gravy.",
+    "image": "https://via.placeholder.com/150",
+    "ingredients": ["500g chicken breast", "1 cup yogurt", "2 tbsp tikka masala spice mix", "1 cup tomato sauce", "1/2 cup cream"],
+    "instructions": [
+      "Marinate the chicken with yogurt and tikka masala spices for 2 hours.",
+      "Grill the chicken until cooked through.",
+      "Prepare the sauce by heating tomato sauce and cream in a pan.",
+      "Add the grilled chicken to the sauce and simmer for 10 minutes.",
+      "Serve hot with rice or naan."
+    ]
+  }
+]

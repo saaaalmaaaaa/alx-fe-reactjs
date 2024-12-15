@@ -1,39 +1,39 @@
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import RecipeList from './components/RecipeList';
 import RecipeDetails from './components/RecipeDetails';
 import AddRecipeForm from './components/AddRecipeForm';
 import FavoritesList from './components/FavoritesList';
 import RecommendationsList from './components/RecommendationsList';
-import SearchBar from './components/SearchBar';
-import './App.css';
 
-function App() {
+
+const App = () => {
   return (
     <Router>
       <div>
-        <h1>Recipe Sharing Application</h1>
+        <h1>Recipe Sharing App</h1>
+        {/* Navigation Links */}
         <nav>
-          <Link to="/">Home</Link> | <Link to="/favorites">Favorites</Link> |{' '}
-          <Link to="/recommendations">Recommendations</Link>
+          <Link to="/">Home</Link> | <Link to="/add-recipe">Add Recipe</Link> | <Link to="/favorites">Favorites</Link> |{' '}
+        <Link to="/recommendations">Recommendations</Link>
         </nav>
-        <SearchBar />
+        <hr />
+        
         <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <AddRecipeForm />
-                <RecipeList />
-              </>
-            }
-          />
-          <Route path="/recipe/:id" element={<RecipeDetails />} />
+          {/* Main route for displaying the recipe list */}
+          <Route path="/" element={<RecipeList />} />
+
+          {/* Route for recipe details */}
+          <Route path="/recipes/:recipeId" element={<RecipeDetails />} />
+
+          {/* Route for adding a new recipe */}
+          <Route path="/add-recipe" element={<AddRecipeForm />} />
           <Route path="/favorites" element={<FavoritesList />} />
-          <Route path="/recommendations" element={<RecommendationsList />} />
+        <Route path="/recommendations" element={<RecommendationsList />} />
         </Routes>
       </div>
     </Router>
   );
-}
+};
 
 export default App;
